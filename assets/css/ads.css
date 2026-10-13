@@ -1,0 +1,59 @@
+/* =========================
+   ads.css
+   Advertisement blocks
+   ========================= */
+
+/* ---- Right Sidebar Ads ---- */
+.ads-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.ad-card {
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1rem;
+  box-shadow: var(--shadow-soft);
+  font-size: 0.85rem;
+  color: #666;
+  text-align: center;
+  min-height: 180px;
+}
+
+.ad-card::before {
+  content: "Advertisement";
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  color: #999;
+  margin-bottom: 0.4rem;
+}
+
+/* ---- Bottom Ad ---- */
+.ads-bottom {
+  max-width: var(--max-width);
+  margin: 2.5rem auto;
+  padding: 0 var(--gutter);
+}
+
+.ad-banner {
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: 1.5rem;  
+  box-shadow: var(--shadow-soft);
+  min-height: 18rem;
+  place-content: center;
+}
+
+.ad-color{
+  color: #666;
+}
+
+/* ---- Responsive Rules ---- */
+@media (max-width: 900px) {
+  .ads-right {
+    display: none; /* hide sidebar ads on mobile */
+  }
+}

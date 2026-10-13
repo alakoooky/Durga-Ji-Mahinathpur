@@ -1,0 +1,8 @@
+Redesign/Modernize homepage (
+index.html
+) with refreshed hero elements and smoother animations.
+Build dynamic nav header & footer loader so changes in nav.html reflect across all pages.
+Enhance 
+gallery.html
+ with an interactive lightbox and filter tabs.
+Preview the website using a local development server.

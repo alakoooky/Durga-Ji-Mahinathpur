@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="mai">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="श्री दुर्गा जी महीनाथपुर - पावन दान, स्वाभिमान एवं वित्तीय पारदर्शिता">
+    <title>श्री दुर्गा जी महीनाथपुर | दान एवं वित्तीय सहयोग</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body class="bg-background text-text-primary">
+    <!-- NAVBAR (Embedded with JS fallback) -->
+    <div id="nav">
+        <nav class="sticky top-0 z-sticky bg-primary-900 shadow-soft border-b border-accent-400/20">
+          <div class="container-custom">
+            <div class="flex items-center justify-between h-20">
+              <a href="index.html" class="flex items-center space-x-3 group">
+                <svg class="w-10 h-10 md:w-12 md:h-12" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="24" cy="24" r="22" fill="#DAA520" opacity="0.2" />
+                  <path d="M24 8L28 16L36 18L30 24L32 32L24 28L16 32L18 24L12 18L20 16L24 8Z" fill="#DAA520" />
+                  <circle cx="24" cy="24" r="6" fill="#8B2635" />
+                </svg>
+                <div class="flex flex-col">
+                  <span class="font-headline text-lg md:text-xl text-accent-400 font-semibold leading-tight">श्री दुर्गा जी</span>
+                  <span class="font-body text-xs text-accent-200">दुहबी महीनाथपुर</span>
+                </div>
+              </a>
+
+              <div class="hidden md:flex items-center space-x-1">
+                <a href="index.html" class="nav-link px-4 py-2 rounded-md text-accent-100 hover:bg-primary-800 hover:text-accent-400 transition-colors duration-300">मुख पृष्ठ</a>
+                <a href="memory.html" class="nav-link px-4 py-2 rounded-md text-accent-100 hover:bg-primary-800 hover:text-accent-400 transition-colors duration-300">स्मृति संग्रह</a>
+                <a href="family.html" class="nav-link px-4 py-2 rounded-md text-accent-100 hover:bg-primary-800 hover:text-accent-400 transition-colors duration-300">परिवार</a>
+                <a href="finance.html" class="nav-link px-4 py-2 rounded-md text-accent-100 hover:bg-primary-800 hover:text-accent-400 transition-colors duration-300">दान</a>
+                <a href="gallery.html" class="nav-link px-4 py-2 rounded-md text-accent-100 hover:bg-primary-800 hover:text-accent-400 transition-colors duration-300">गैलरी</a>
+                <a href="contact.html" class="nav-link px-4 py-2 rounded-md text-accent-100 hover:bg-primary-800 hover:text-accent-400 transition-colors duration-300">संपर्क</a>
+              </div>
+
+              <button data-donation-trigger="true" class="hidden md:inline-flex items-center space-x-2 bg-accent-400 hover:bg-accent-500 text-primary-950 font-medium px-5 py-2.5 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
+                <span>दान करू</span>
+              </button>
+
+              <button id="mobile-menu-btn" class="md:hidden p-2 text-accent-100 hover:text-accent-400 transition-colors focus:outline-none" aria-label="Toggle mobile menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </button>
+            </div>
+
+            <div id="mobile-menu" class="hidden md:hidden pb-4 pt-2 border-t border-primary-800">
+              <div class="flex flex-col space-y-2">
+                <a href="index.html" class="nav-link px-4 py-2 rounded-md text-accent-100 hover:bg-primary-800 hover:text-accent-400 transition-colors duration-300">मुख पृष्ठ</a>
+                <a href="memory.html" class="nav-link px-4 py-2 rounded-md text-accent-100 hover:bg-primary-800 hover:text-accent-400 transition-colors duration-300">स्मृति संग्रह</a>
+                <a href="family.html" class="nav-link px-4 py-2 rounded-md text-accent-100 hover:bg-primary-800 hover:text-accent-400 transition-colors duration-300">परिवार</a>
+                <a href="finance.html" class="nav-link px-4 py-2 rounded-md text-accent-100 hover:bg-primary-800 hover:text-accent-400 transition-colors duration-300">दान</a>
+                <a href="gallery.html" class="nav-link px-4 py-2 rounded-md text-accent-100 hover:bg-primary-800 hover:text-accent-400 transition-colors duration-300">गैलरी</a>
+                <a href="contact.html" class="nav-link px-4 py-2 rounded-md text-accent-100 hover:bg-primary-800 hover:text-accent-400 transition-colors duration-300">संपर्क</a>
+                <button data-donation-trigger="true" class="w-full bg-accent-400 hover:bg-accent-500 text-primary-950 font-medium px-4 py-2.5 rounded-lg text-center mt-2 transition-colors">दान करू</button>
+              </div>
+            </div>
+          </div>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="relative h-[450px] md:h-[550px] overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="assets/images/Durgaji-img.png" alt="श्री दुर्गा जी महीनाथपुर" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-b from-primary-900/85 via-primary-900/75 to-primary-900/90"></div>
+        </div>
+
+        <div class="relative container-custom h-full flex items-center">
+            <div class="max-w-3xl animate-fade-in">
+                <div class="inline-flex items-center space-x-2 bg-accent-500/20 px-4 py-1.5 rounded-full mb-6 border border-accent-400/30">
+                    <span class="text-accent-400 font-headline text-sm font-semibold">श्री दुर्गा जी महीनाथपुर</span>
+                </div>
+                <h1 class="font-headline text-4xl md:text-5xl lg:text-6xl text-white mb-6 leading-tight">
+                    वित्तीय पारदर्शिता एवं स्वाभिमानी अर्पण
+                </h1>
+                <p class="font-headline text-accent-400 text-xl md:text-2xl mb-4 font-semibold">
+                    श्रद्धा, स्वाभिमान आ पारदर्शिता सँ चलैत एक पावन परम्परा
+                </p>
+                <p class="text-accent-100 text-base md:text-lg font-body max-w-2xl leading-relaxed">
+                    अहाँक हर स्वेच्छिक योगदान मंदिरक पवित्रता आ माँ दुर्गे केर सेवा-पूजा के निरन्तर बनौने रखबामे सहायक अछि।
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Context Section -->
+    <section class="section py-12 bg-surface">
+        <div class="card container-custom mx-auto bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-accent-400/20 space-y-4">
+            <p class="text-lg md:text-xl leading-relaxed text-text-primary">
+                अतीत केर ज्योतिषी परिवार आब समय संग बहुत विस्तृत भऽ गेल अछि। स्वाभाविक अछि जे परिवारक सदस्य बढ़ला सँ वित्तीय दायित्व आ भारो विस्तार पाबैत अछि। तथापि, परिवारक प्रायः सभ सदस्य अपन सहयोगात्मक भावना सँ, अपन-अपन निजी योगदान द्वारा, भगवतीक कृपा सँ श्री दुर्गा पूजाक संचालन निरन्तर बनौने रखबाक प्रयास करैत रहैत छथि।
+            </p>
+
+            <p class="text-lg md:text-xl leading-relaxed text-text-primary">
+                ककरो आगाँ हाथ पसारबाक इच्छा कखनो नहि रहल अछि, आ एखनहु नहि अछि। परिवारक सभ सदस्य स्वाभिमानी छथि। तथापि, यदि कोनों श्रद्धालु स्वेच्छा सँ माँ श्री दुर्गा जी पर प्रसाद अर्पण स्वरूप वित्तीय सहयोग करऽ चाहैत छथि, तऽ एकर लेल कोनों आपत्ति नहि अछि।
+            </p>
+
+            <p class="text-lg md:text-xl font-semibold text-primary-900">
+                एहि उद्देश्य सँ एतय QR कोड आ बैंक विवरण उपलब्ध कराओल गेल अछि, जाहि माध्यम सँ श्रद्धालु अपन स्वेच्छिक वित्तीय सहयोग अर्पित कऽ सकैत छथि।
+            </p>
+        </div>
+    </section>
+
+    <!-- Donation Section -->
+    <section id="quick-donate" class="section py-12">
+        <div class="container-custom" id="donation-widget">
+            <div class="section-header text-center mb-10">
+                <h2 class="text-3xl md:text-4xl font-headline text-primary-900 font-bold mb-2">अपन पावन अर्पण करू</h2>
+                <p class="text-base text-text-secondary">अपन सुविधा अनुसार स्वेच्छिक अनुदान माध्यम चुनू।</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <div class="card bg-white p-8 rounded-2xl border border-accent-400/30 shadow-md">
+                    <div class="text-center">
+                        <h3 class="font-headline text-2xl text-primary-900 font-semibold mb-3">ऑनलाइन बैंक / UPI विवरण</h3>
+                        <p class="text-text-secondary text-sm mb-6 leading-relaxed">
+                            ई बैंक खाता ज्योतिषी परिवारक सदस्य श्री सतीश कुमार झा जीक अछि, जिनका परिवारक सभ सदस्य सामूहिक रूपेँ पूजा आयोजन आ वित्तीय प्रबंधनक उत्तरदायित्व देने छथि।
+                        </p>
+                        <div class="bg-primary-50 border border-accent-400/30 rounded-xl p-4 mb-4 text-left">
+                            <p class="text-xs text-text-tertiary mb-1">खाताधारी नाम</p>
+                            <p class="text-lg font-bold text-primary-950">खाताधारी - सतीश कुमार झा</p>
+                        </div>
+                        <div class="bg-primary-50 border border-accent-400/30 rounded-xl p-4 mb-4 text-left">
+                            <p class="text-xs text-text-tertiary mb-1">UPI ID</p>
+                            <div class="flex items-center justify-between">
+                                <p class="text-lg font-bold text-primary-950 font-mono" id="upi-id-text">9122177430@ybl</p>
+                                <button type="button" class="text-primary-900 hover:text-accent-600 font-medium text-xs bg-white px-3 py-1.5 rounded border border-accent-400/40 shadow-sm" onclick="copyUPIID()">कॉपी करू</button>
+                            </div>
+                        </div>
+                        <div class="pt-4 border-t border-gray-100 flex justify-center items-center space-x-4">
+                            <img src="assets/images/upi_logo_icon_169316.svg" alt="UPI" class="h-8">
+                            <span class="text-xs text-text-tertiary">Google Pay, PhonePe, Paytm समर्थित</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-white p-8 rounded-2xl border border-accent-400/30 shadow-md">
+                    <div class="text-center">
+                        <h3 class="font-headline text-2xl text-primary-900 font-semibold mb-2">QR कोड द्वारा दान</h3>
+                        <p class="text-text-secondary text-sm mb-4">कोनों UPI ऐप द्वारा स्कैन कऽ तुरंत सहयोग समर्पित करू</p>
+                        <div class="mb-4 inline-block bg-white p-4 rounded-xl shadow-inner border-2 border-accent-400/40">
+                            <img src="assets/images/qr-donation.png" alt="श्री दुर्गा जी महीनाथपुर QR कोड" class="w-56 h-56 object-contain mx-auto">
+                        </div>
+                        <p class="text-xs text-primary-900 font-bold">खाताधारी: सतीश कुमार झा</p>
+                        <p class="text-xs text-text-tertiary mt-1">durgajimahinathpur.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AD BOTTOM -->
+    <div id="ads-bottom"></div>
+
+    <!-- FOOTER (Embedded with JS fallback) -->
+    <div id="footer">
+        <footer class="bg-primary-900 text-accent-100 pt-16 pb-8 border-t border-accent-400/20">
+          <div class="container-custom">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+              <div>
+                <div class="flex items-center space-x-3 mb-4">
+                  <svg class="w-10 h-10" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="24" r="22" fill="#DAA520" opacity="0.2" />
+                    <path d="M24 8L28 16L36 18L30 24L32 32L24 28L16 32L18 24L12 18L20 16L24 8Z" fill="#DAA520" />
+                    <circle cx="24" cy="24" r="6" fill="#8B2635" />
+                  </svg>
+                  <div class="flex flex-col">
+                    <span class="font-headline text-lg text-accent-400 font-semibold">श्री दुर्गा जी</span>
+                    <span class="font-body text-xs text-accent-200">दुहबी महीनाथपुर</span>
+                  </div>
+                </div>
+                <p class="text-sm text-accent-200 leading-relaxed mb-3">श्रद्धा, परम्परा आ माँ दुर्गे केर कृपा सँ पोषित एक पावन विरासत।</p>
+                <p class="text-xs text-accent-400"><strong>खाताधारी:</strong> सतीश कुमार झा</p>
+              </div>
+
+              <div>
+                <h3 class="font-headline text-lg text-accent-400 mb-4">त्वरित लिंक</h3>
+                <ul class="space-y-2">
+                  <li><a href="index.html" class="text-sm text-accent-200 hover:text-accent-400 transition-colors">मुख पृष्ठ</a></li>
+                  <li><a href="memory.html" class="text-sm text-accent-200 hover:text-accent-400 transition-colors">स्मृति संग्रह</a></li>
+                  <li><a href="family.html" class="text-sm text-accent-200 hover:text-accent-400 transition-colors">परिवार</a></li>
+                  <li><a href="finance.html" class="text-sm text-accent-200 hover:text-accent-400 transition-colors">दान एवं आय-व्यय</a></li>
+                  <li><a href="gallery.html" class="text-sm text-accent-200 hover:text-accent-400 transition-colors">गैलरी</a></li>
+                  <li><a href="contact.html" class="text-sm text-accent-200 hover:text-accent-400 transition-colors">संपर्क</a></li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 class="font-headline text-lg text-accent-400 mb-4">संपर्क</h3>
+                <ul class="space-y-3">
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 mr-2 flex-shrink-0 mt-0.5 text-accent-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    <span class="text-sm text-accent-200">दुहबी महीनाथपुर, धनुषा, नेपाल</span>
+                  </li>
+                  <li class="flex items-center">
+                    <svg class="w-5 h-5 mr-2 flex-shrink-0 text-accent-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                    <a href="mailto:durgajimahinathpur@gmail.com" class="text-sm text-accent-200 hover:text-accent-400 transition-colors">durgajimahinathpur@gmail.com</a>
+                  </li>
+                  <li class="flex items-center">
+                    <svg class="w-5 h-5 mr-2 flex-shrink-0 text-accent-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9" />
+                    </svg>
+                    <a href="https://durgajimahinathpur.com" target="_blank" class="text-sm text-accent-200 hover:text-accent-400 transition-colors">durgajimahinathpur.com</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 class="font-headline text-lg text-accent-400 mb-4">दर्शन समय</h3>
+                <ul class="space-y-2 text-sm">
+                  <li class="flex justify-between border-b border-primary-800 pb-1">
+                    <span>प्रातः आरती:</span>
+                    <span class="text-accent-400 font-semibold">6:00 AM</span>
+                  </li>
+                  <li class="flex justify-between border-b border-primary-800 pb-1">
+                    <span>विशेष भोग:</span>
+                    <span class="text-accent-400 font-semibold">12:00 PM</span>
+                  </li>
+                  <li class="flex justify-between border-b border-primary-800 pb-1">
+                    <span>संध्या आरती:</span>
+                    <span class="text-accent-400 font-semibold">7:00 PM</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="divider border-primary-800 my-6"></div>
+
+            <div class="flex flex-col md:flex-row justify-between items-center pt-4">
+              <p class="text-xs text-accent-200 mb-4 md:mb-0">© 2026 श्री दुर्गा जी महीनाथपुर। सर्वाधिकार सुरक्षित। (durgajimahinathpur.com)</p>
+              <button data-donation-trigger="true" class="text-xs text-accent-400 hover:underline">दान हेतु QR कोड</button>
+            </div>
+          </div>
+        </footer>
+    </div>
+
+    <!-- Shared JavaScript -->
+    <script src="assets/js/common.js"></script>
+    <script>
+        function copyUPIID() {
+            const upiText = document.getElementById('upi-id-text').innerText;
+            navigator.clipboard.writeText(upiText).then(() => {
+                alert('UPI ID कॉपी भऽ गेल: ' + upiText);
+            });
+        }
+    </script>
+</body>
+
+</html>
